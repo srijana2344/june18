@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo-search-create">
+                <div class="logo">Logo</div>
+                <div class="search-bar">
+                    <input type="search" placeholder="Search">
+                </div>
+                <div class="btn btn-primary">Create</div>
+            </div>
+            <div class="profile-photo">
+                <img src="profile.jpg" alt="Profile">
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div class="left">
+                <div class="sidebar">
+                    <div class="menu-item active" id="home">
+                        <i class="icon-home"></i>
+                        <h3>Home</h3>
+                    </div>
+                    <div class="menu-item" id="message-notification">
+                        <i class="icon-message"></i>
+                        <h3>Messages</h3>
+                        <span class="notification-count">3</span>
+                    </div>
+                    <div class="menu-item" id="notifications">
+                        <i class="icon-notification"></i>
+                        <h3>Notifications</h3>
+                        <span class="notification-count">5</span>
+                    </div>
+                    <div class="menu-item" id="theme">
+                        <i class="icon-theme"></i>
+                        <h3>Theme</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="story1.jpg" alt="Story 1">
+                        </div>
+                        <p class="name">User 1</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="story2.jpg" alt="Story 2">
+                        </div>
+                        <p class="name">User 2</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="story3.jpg" alt="Story 3">
+                        </div>
+                        <p class="name">User 3</p>
+                    </div>
+                    <!-- Add more stories as needed -->
+                </div>
+                <div class="create-post">
+                    <div class="profile-photo">
+                        <img src="profile.jpg" alt="Profile">
+                    </div>
+                    <input type="text" placeholder="What's on your mind?">
+                </div>
+                <div class="feeds">
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="profile.jpg" alt="Profile">
+                                </div>
+                                <div>
+                                    <h3>User Name</h3>
+                                    <small>@username</small>
+                                </div>
+                            </div>
+                            <div class="options">
+                                <i class="icon-options"></i>
+                            </div>
+                        </div>
+                        <div class="photo">
+                            <img src="feed1.jpg" alt="Feed 1">
+                        </div>
+                        <div class="action-buttons">
+                            <i class="icon-like"></i>
+                            <i class="icon-comment"></i>
+                            <i class="icon-share"></i>
+                        </div>
+                        <div class="liked-by">
+                            <span><img src="profile.jpg" alt="User"></span>
+                            <span><img src="profile.jpg" alt="User"></span>
+                            <span><img src="profile.jpg" alt="User"></span>
+                            <p>Liked by <strong>User</strong> and <strong>2 others</strong></p>
+                        </div>
+                        <p><strong>User</strong> Caption text here...</p>
+                    </div>
+                    <!-- Add more feeds as needed -->
+                </div>
+            </div>
+            <div class="right">
+                <div class="messages">
+                    <div class="heading">
+                        <h4>Messages</h4>
+                        <i class="icon-message"></i>
+                    </div>
+                    <div class="search-bar">
+                        <input type="text" id="message-search" placeholder="Search messages">
+                    </div>
+                    <div class="category">
+                        <h6 class="active">Primary</h6>
+                        <h6>General</h6>
+                        <h6>Requests</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="profile.jpg" alt="User">
+                            <span class="active"></span>
+                        </div>
+                        <div class="message-body">
+                            <h5>User</h5>
+                            <p>Message text here...</p>
+                        </div>
+                    </div>
+                    <!-- Add more messages as needed -->
+                </div>
+                <div class="friend-requests">
+                    <h4>Friend Requests</h4>
+                    <div class="request">
+                        <div class="info">
+                            <div class="profile-photo">
+                                <img src="profile.jpg" alt="User">
+                            </div>
+                            <div>
+                                <h5>User</h5>
+                                <p>Mutual Friend: 3</p>
+                            </div>
+                        </div>
+                        <div class="action">
+                            <button class="btn btn-primary">Accept</button>
+                            <button class="btn">Decline</button>
+                        </div>
+                    </div>
+                    <!-- Add more friend requests as needed -->
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize Theme</h2>
+            <div class="font-size">
+                <h3>Font Size</h3>
+                <div>
+                    <h4>Aa</h4>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h4>Aa</h4>
+                </div>
+            </div>
+            <div class="color">
+                <h3>Color</h3>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+            <div class="background">
+                <h3>Background</h3>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5>Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5>Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5>Dark</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
